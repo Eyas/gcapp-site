@@ -1,0 +1,71 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #E8EEF2;
+  color: rgb(40, 40, 44);
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+body {
+  @media (prefers-color-scheme: dark) {
+    color: rgb(229, 229, 231);
+    background: #141529;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p a, li a, figcaption a {
+  color: inherit;
+  text-decoration: underline dotted 1px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body > header {
+  background-color: #D8E3E9;
+  box-shadow: #3581b8 0 0 2px;
+  @media (prefers-color-scheme: dark) {
+    background-color: #222344;
+    box-shadow: #2892B8 0 0 1px;
+  }
+  a > img {
+    width: 80px;
+    height: auto;
+  }
+}
+
+body > footer {
+  background-color: #D8E3E9;
+  box-shadow: #3581b8 0 0 2px;
+  @media (prefers-color-scheme: dark) {
+    background-color: #222344;
+    box-shadow: #2892B8 0 0 2px;
+  }
+  font-size: 0.75rem;
+  padding: 4px;
+}
+
+body > main {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.55;
+  padding: 1rem;
+}
+
+body > header > .sizer {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
