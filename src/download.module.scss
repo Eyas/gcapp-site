@@ -1,0 +1,13 @@
+.d {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a:last-child img {
+        margin: 18px;
+    }
+}
+
+.notes {
+    margin-top: 8em;
+    font-size: 75%;
+}
