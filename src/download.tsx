@@ -1,3 +1,5 @@
+"use client";
+
 import { usePhoneType } from "./use-os";
 import styles from "./download.module.scss";
 
