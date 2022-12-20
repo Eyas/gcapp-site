@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #E8EEF2;
+  background-color: #f5fbff;
   color: rgb(40, 40, 44);
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -32,10 +32,10 @@ p a, li a, figcaption a {
 
 body > header {
   background-color: #D8E3E9;
-  box-shadow: #3581b8 0 0 2px;
+  box-shadow: #3581b885 0 0 4px;
   @media (prefers-color-scheme: dark) {
-    background-color: #222344;
-    box-shadow: #2892B8 0 0 1px;
+    background-color: #FFF;
+    box-shadow: #141529 0 -6px 6px -6px inset;
   }
   a > img {
     width: 80px;
@@ -45,13 +45,17 @@ body > header {
 
 body > footer {
   background-color: #D8E3E9;
-  box-shadow: #3581b8 0 0 2px;
+  box-shadow: #3581b885 0 0 4px;
   @media (prefers-color-scheme: dark) {
     background-color: #222344;
-    box-shadow: #2892B8 0 0 2px;
+    box-shadow: #acaee2cc 0 0 3px;
   }
   font-size: 0.75rem;
-  padding: 4px;
+  padding: 18px 4px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 body > main {
@@ -60,6 +64,7 @@ body > main {
   margin-right: auto;
   line-height: 1.55;
   padding: 1rem;
+  margin-bottom: (18px * 2) + (0.75 * 16px);
 }
 
 body > header > .sizer {

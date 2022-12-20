@@ -1,13 +1,16 @@
-import Image from "next/image";
+import { Download } from "../src/download";
 
 export default function Home() {
   return (
     <>
-      <h1>Coming Soon</h1>
+      <h1>GC 2023 Conference App</h1>
       <p>
-        The GC Conference App will be available for the 2023 GC this January!
+        Attending <a href="https://stanthonyhall.org/">St. Anthony Hall</a>
+        &apos;s 2023 Grand Convention? Use the GC 2023 app to stay on top of the
+        conference schedule and the events you are interested in.
       </p>
       <p>Stay tuned!</p>
+      <Download />
     </>
   );
 }
