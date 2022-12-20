@@ -2,6 +2,7 @@
 
 import { usePhoneType } from "./use-os";
 import styles from "./download.module.scss";
+import { useEffect } from "react";
 
 const ANDROID_URL =
   "https://play.google.com/store/apps/details?id=org.stanthonyhall.gcapp";
@@ -9,13 +10,13 @@ const IOS_URL = "https://apps.apple.com/us/app/gc-2023/id6444782168;";
 
 export function Download() {
   const os = usePhoneType();
-  if (os === "ios") {
-    window.location.replace(IOS_URL);
-    return null;
-  } else if (os === "android") {
-    window.location.replace(ANDROID_URL);
-    return null;
-  }
+  useEffect(() => {
+    if (os === "ios") {
+      window.location.replace(IOS_URL);
+    } else if (os === "android") {
+      window.location.replace(ANDROID_URL);
+    }
+  }, [os]);
 
   return (
     <>
