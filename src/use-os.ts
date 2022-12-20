@@ -2,7 +2,7 @@
 
 export function usePhoneType(): "android" | "ios" | "other" {
   if (
-    typeof navigator === undefined ||
+    typeof navigator === "undefined" ||
     typeof navigator.userAgent !== "string"
   ) {
     return "other";
